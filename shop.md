@@ -16,7 +16,7 @@ Sign up for launch alerts: Be first to pre-order when we drop.
     <input type="email" id="email" name="email" placeholder="your@email.com" required>
   </div>
   
-  <input type="hidden" name="_next" value=""https://marenostrumsailing.github.io/thank-you/">
+  <input type="hidden" name="_next" value="https://marenostrumsailing.github.io/thank-you/">
   
   <button type="submit">Notify Me</button>
 </form>
@@ -32,4 +32,3 @@ Sign up for launch alerts: Be first to pre-order when we drop.
   *(Photos of gear tests and ocean runs.)*
 
 [Back to Home](/)
-

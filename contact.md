@@ -14,7 +14,6 @@ We're always up for chats on AI wind tools, Allures/Garcia mods, or expedition b
 - **Instagram**: [@mare.nostrum.grn](https://www.instagram.com/mare.nostrum.grn/)  
   *(Follow for voyage photos, gear tests, and ocean inspo.)*
 
-
 ## Send a Message
 Want to sign up for beta access or share your wind algo ideas? Use this form—no spam, promise.
 
@@ -33,9 +32,9 @@ Want to sign up for beta access or share your wind algo ideas? Use this form—n
     <label for="message">Message:</label>
     <textarea id="message" name="message" rows="6" placeholder="Tell us about your expedition setup or AI ideas..." required></textarea>
   </div>
- 
-  <input type="hidden" name="_next" value=""https://marenostrumsailing.github.io/thank-you/">
- 
+  
+  <input type="hidden" name="_next" value="https://marenostrumsailing.github.io/thank-you/">
+  
   <button type="submit">Send Message</button>
 </form>
 
