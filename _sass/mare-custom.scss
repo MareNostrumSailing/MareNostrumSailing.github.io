@@ -1,0 +1,92 @@
+@import "minima";  // Pulls in Minima's core styles (fonts, layout)
+// Custom overrides for nautical/professional vibe
+body {
+  background: linear-gradient(to bottom, #e0f7fa 0%, #b2ebf2 50%, #4fc3f7 100%);  // Light sky-to-sea fade
+  font-family: 'Georgia', serif;  // Elegant serif for adventure storytelling
+  color: #2c3e50;  // Dark slate for readability
+}.site-header {
+  background: rgba(52, 152, 219, 0.9);  // Semi-transparent ocean blue
+  border-bottom: 2px solid #3498db;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);  // Subtle drop shadow for depth
+}.site-title {
+  font-size: 2.5rem;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);  // Makes it pop on gradients
+}.post-title,
+.page-title {
+  color: #2980b9;  // Deeper blue for headings
+  font-weight: 600;
+}a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;  // Smooth hover
+}a:hover {
+  color: #e74c3c;  // Warm red-orange for "following seas" energy
+  text-decoration: underline;
+}.site-footer {
+  background: #34495e;  // Navy footer
+  color: white;
+  padding: 2rem 0;
+}.button-like {  // For CTAs like "Buy Now"
+  background: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 1rem 0;
+}.button-like:hover {
+  background: #2980b9;
+}
+: @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap'); body { font-family: 'Playfair Display', serif; }
+
+// Top nav tabs
+.site-nav {
+  background: rgba(255, 255, 255, 0.9);  // Frosted glass over gradient
+  padding: 0;
+  border-bottom: 1px solid #3498db;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 0.5rem;
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #e74c3c;
+}
+
+.nav-link.active::after {  // Underline for active tab
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: #e74c3c;
+}
+.header {  // Targets the header area
+  display: flex;
+  justify-content: center;
+  background: rgba(52, 152, 219, 0.9);
+  padding: 1rem;
+}
+// Reuse your earlier .site-nav, .nav-list styles
