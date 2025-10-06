@@ -446,3 +446,18 @@ Append to `assets/css/custom.css` (reuses contact styles, teal button):
   background: #0099b5;
 }
 
+/* AI Highlight in Logo */
+.site-title span.ai-highlight {
+  color: #00b4d8;  /* Teal glow */
+  font-weight: 700;  /* Bold pop */
+  text-shadow: 0 0 8px rgba(0, 180, 216, 0.5);  /* Subtle glow for emphasis */
+  letter-spacing: 0.5px;  /* Slight space for readability */
+}
+
+/* Responsive: Tone down on mobile */
+@media (max-width: 768px) {
+  .site-title span.ai-highlight {
+    text-shadow: none;  /* No glow on small screens */
+  }
+}
+

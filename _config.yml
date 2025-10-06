@@ -1,5 +1,5 @@
 # Site settings
-title: Mare Nostrum Sailing
+title: "Mare Nostrum S[ai]ling"
 description: Bringing AI to expedition sailboats for remote adventures. Open-source wind tools and hardware for Allures, Garcia, and beyond.
 baseurl: ""  # Leave empty for root domain
 url: "https://marenostrumsailing.github.io"
