@@ -1,0 +1,44 @@
+# Site settings
+title: "Mare Nostrum S[ai]ling"
+description: Bringing AI to expedition sailboats for remote adventures. Open-source wind tools and hardware for Allures, Garcia, and beyond.
+baseurl: ""  # Leave empty for root domain
+url: "https://marenostrumsailing.github.io"
+
+# Theme (Minima: clean, professional, blog-ready)
+# theme: jekyll-theme-minimal
+
+# Minima-specific overrides (nested under minima)
+# minima:
+#   skin: mare-custom  # References your custom SCSS skin
+#   social_links:
+#     - { platform: x, user: _your_x_handle }  # Optional: Adds X icon to footer
+#   show_excerpts: false  # Hides post teasers on homepage for cleaner look
+
+# Theme setup (remote_theme loads it from GitHub—no local files needed)
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme  # Required for remote themes
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Your other settings (title, description, minima overrides—remove minima: block if present)
+title: Mare Nostrum Sailing
+description: Bringing AI to expedition sailboats for remote adventures.
+
+
+# Plugins for GitHub Pages (SEO, feeds, sitemap)
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

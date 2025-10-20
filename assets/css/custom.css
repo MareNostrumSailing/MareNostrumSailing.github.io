@@ -1,0 +1,555 @@
+/* Mare Nostrum Dark Theme for Minimal - Fixed Layout */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+body {
+  background: #0f0f0f;  /* Deep charcoal bg */
+  color: #e5e5e5;  /* Light gray text */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 2rem;  /* Indent from left/right edges for 'pro' feel */
+  background: #1a1a1a;  /* Content bg */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;  /* Includes padding in width calc */
+}
+
+header {
+  background: #1a1a1a;
+  padding: 2rem 0 2rem;  /* Extra bottom padding to space from nav/section */
+  text-align: center;
+  border-bottom: 1px solid #333;
+  margin-bottom: 0;  /* No extra margin—flex handles */
+  flex-shrink: 0;  /* Prevents compression */
+}
+
+header h1 a {
+  color: #ffffff !important;  /* Pure white site title */
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-decoration: none;
+  text-shadow: none;
+  display: block;  /* Ensures no inline overlap */
+}
+
+header p {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  margin: 0.5rem 0 1rem;
+}
+
+header .view {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.site-nav {
+  background: #1a1a1a;
+  padding: 1rem 0;  /* More padding for breathing room */
+  border-bottom: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;  /* Space below tabs */
+  flex-shrink: 0;
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  color: #00b4d8;  /* Teal */
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+  border-radius: 4px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffffff;
+  background: rgba(0, 180, 216, 0.1);
+}
+
+section {
+  flex: 1;  /* Grows to fill space */
+  padding: 0 0 2rem;  /* No top padding—header/nav handle spacing; bottom for footer gap */
+  display: block;  /* Override any theme float */
+  clear: both;  /* Clears any theme floats causing overlap */
+}
+
+section > *:first-child {  /* First element in section (your h1) */
+  margin-top: 0;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: block;  /* Prevents inline text wrap issues */
+  margin: 1rem auto;  /* Centers hero image */
+}
+
+ul, ol {
+  color: #d1d1d1;
+  padding-left: 1.5rem;  /* Standard indent for lists */
+}
+
+a {
+  color: #00b4d8;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer {
+  background: #1a1a1a;
+  padding: 1.5rem 0;  /* More vertical space */
+  border-top: 1px solid #333;
+  margin-top: auto;  /* Flex-push to bottom */
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin: 0 0 0.5rem;
+  color: #b0b0b0;
+}
+
+.theme-credit {
+  font-size: 0.7rem;
+  opacity: 0.5;
+  margin: 0;
+  color: #808080;
+}
+
+.theme-credit a {
+  color: #00b4d8;
+}
+
+/* Override theme's old floats/widths to prevent overlaps */
+header, section, footer {
+  width: 100%;
+  float: none;
+  position: relative;  /* No absolutes */
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 0 1rem;  /* Less indent on small screens */
+  }
+  .nav-list {
+    gap: 1rem;
+  }
+  .nav-link {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.95rem;
+  }
+  header h1 a {
+    font-size: 2rem;
+  }
+}
+
+/* Fix bold text readability in dark mode */
+strong {
+  color: #ffffff !important;  /* Pure white for bold items */
+}
+
+ul li strong,
+ol li strong {
+  color: #e5e5e5;  /* Slightly softer white for list bolding */
+}
+
+hr {
+  border-color: #333;  /* Subtle gray for your <hr> divider */
+  margin: 2rem 0;
+}
+/* Auto H1 header: Centered teal with underline */
+.page-header {
+  text-align: center;
+  margin: 2rem 0 3rem;
+  border-bottom: 2px solid #333;  /* Subtle gray underline */
+  padding-bottom: 0.75rem;
+  font-weight: 500;
+  font-size: 2rem;  /* Scalable on mobile */
+}
+
+.page-header h1 {
+  color: #00b4d8;  /* Teal accent */
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* Fallback for manual H1s in Markdown */
+section h1:first-of-type {
+  @extend .page-header;  /* Applies if you keep Markdown H1 */
+}
+
+/* Blog teasers */
+.blog-index h1 {
+  color: #ffffff !important;  /* White to unify with .page-header h1 */
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.post-teaser {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.post-teaser h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.post-teaser h2 a {
+  color: #00b4d8;
+  text-decoration: none;
+}
+
+.post-teaser h2 a:hover {
+  color: #ffffff;
+}
+
+.post-meta {
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  margin: 0.5rem 0;
+}
+
+.post-excerpt {
+  color: #d1d1d1;
+  line-height: 1.5;
+}
+
+.read-more {
+  color: #00b4d8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Blog subtitle: Subtle tagline */
+.blog-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #b0b0b0;  /* Muted gray */
+  margin: 0.5rem 0 3rem;  /* Tight top, space to teasers */
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Center all H1s for uniform alignment */
+section h1 {
+  text-align: center !important;  /* Matches .page-header */
+  margin: 0 auto 2rem;  /* Balanced spacing */
+  max-width: 800px;  /* Keeps long titles from full-width stretch */
+}
+
+
+/* Contact form: Dark mode fit */
+.contact-form {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.contact-form label {
+  display: block;
+  margin: 1rem 0 0.5rem;
+  color: #e5e5e5;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2a2a2a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  color: #e5e5e5;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  background: #00b4d8;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.contact-form button:hover {
+  background: #ffffff;
+  color: #00b4d8;
+}
+/* Refined contact form: Stacked, full-width message */
+.contact-form {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #e5e5e5;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;  /* Full width in container */
+  padding: 0.75rem;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px;
+  color: #e5e5e5;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #00b4d8;  /* Teal glow on focus */
+}
+
+.contact-form textarea {
+  resize: vertical;  /* User can expand vertically only */
+  min-height: 120px;
+}
+
+.contact-form button {
+  background: #00b4d8;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  transition: background 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: #0099b5;  /* Darker teal hover */
+}
+
+.privacy-note {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);  /* Subtle dark overlay */
+  border-radius: 6px;
+  border-left: 4px solid #00b4d8;  /* Teal accent bar */
+}
+
+.privacy-note p {
+  margin: 0;
+  color: #b0b0b0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.privacy-note strong {
+  color: #e5e5e5;
+}
+/* Thank-you page: Light success touch */
+.thank-you {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.thank-you h1 {
+  color: #00b4d8 !important;  /* Teal for positivity */
+  margin-bottom: 1rem;
+}
+
+
+#### Quick CSS for Signup Form (~10 seconds)
+Append to `assets/css/custom.css` (reuses contact styles, teal button):
+```css
+.shop-signup {
+  max-width: 400px;
+  margin: 2rem auto;
+}
+
+.shop-signup input {
+  width: 100%;
+  padding: 0.75rem;
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 6px 6px 0 0;
+  color: #e5e5e5;
+}
+
+.shop-signup button {
+  width: 100%;
+  background: #00b4d8;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 0 0 6px 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.shop-signup button:hover {
+  background: #0099b5;
+}
+
+/* AI Highlight in Logo */
+.site-title span.ai-highlight {
+  color: #00b4d8;  /* Teal glow */
+  font-weight: 700;  /* Bold pop */
+  text-shadow: 0 0 8px rgba(0, 180, 216, 0.5);  /* Subtle glow for emphasis */
+  letter-spacing: 0.5px;  /* Slight space for readability */
+}
+
+/* Responsive: Tone down on mobile */
+@media (max-width: 768px) {
+  .site-title span.ai-highlight {
+    text-shadow: none;  /* No glow on small screens */
+  }
+}
+
+.hero {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.hero-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background: #00b4d8;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background: #0099b5;
+}
+
+.wrapper .image-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  row-gap: 1rem !important;      /* Vertical gap between rows */
+  column-gap: 1rem !important;  /* Horizontal gap between columns—matches vertical */
+  margin: 2rem auto !important;
+  justify-items: center !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;  /* Includes padding in sizing for even gaps */
+}
+
+.wrapper .image-grid img {
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover !important;
+  border-radius: 8px !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  margin: 0 !important;  /* Zero margins—no extra space creep */
+  padding: 0 !important;
+  display: block !important;
+  box-sizing: border-box !important;
+}
+
+/* Mobile: Reduce gaps proportionally */
+@media (max-width: 700px) {
+  .wrapper .image-grid {
+    grid-template-columns: 1fr !important;
+    row-gap: 0.5rem !important;
+    column-gap: 0.5rem !important;  /* Equal on mobile too */
+  }
+  
+  .wrapper .image-grid img {
+    height: 200px !important;
+  }
+}
+
+.grid-caption {
+  text-align: center !important;
+  font-style: italic !important;
+  color: #b0b0b0 !important;
+  margin-top: 1rem !important;
+  font-size: 1.1rem !important;
+  max-width: 80% !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
