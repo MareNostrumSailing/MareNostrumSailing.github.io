@@ -1,26 +1,35 @@
 ---
 layout: default
-title: About Mare Nostrum Sailing
+title: About Mare Nostrum S[ai]ling
 permalink: /about/
 ---
 
-# About Us: AI for the High Seas
+# About Us: Sailing Smarter, Together
 
-We're a crew of sailors and coders passionate about making remote expeditions safer and smarter. Founded in 2022, Mare Nostrum Sailing bridges the gap between cutting-edge AI and the unforgiving ocean—starting with our own Allures 45.9 testbed.
+At Mare Nostrum S[ai]ling, we're blending the thrill of the sea with the power of AI to open new horizons for adventurers. Founded in 2022, our journey started with a simple passion: making long voyages safer, more intuitive, and deeply connected to the world's wild places. From our own expedition sailboat testbed, we're crafting tools that turn the vast ocean into a trusted partner.
 
-![Our Allures 45.9](/assets/images/allures-hero.jpg)  
-*Our aluminum expedition rig, kitted with Starlink and AI prototypes.*
+<div class="image-grid" style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin: 2rem auto; max-width: 100%;">
+  <img src="/assets/images/snowy-mountains.jpg" alt="Snowy mountains from our coastal voyage" style="flex: 1 1 45%; height: 280px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+  <img src="/assets/images/grizzly-bears.jpg" alt="Wild grizzly bears spotted on a remote shore" style="flex: 1 1 45%; height: 280px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+  <img src="/assets/images/kids-paddleboarding.jpg" alt="Kids paddle boarding at peaceful anchor" style="flex: 1 1 45%; height: 280px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+  <img src="/assets/images/sail-trip-sunset.jpg" alt="Sunset over the waves during a family sail" style="flex: 1 1 45%; height: 280px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);">
+</div>
+<p class="grid-caption">Memories from the helm: From icy peaks to wildlife wonders, and quiet family moments at anchor—fueling our drive to explore responsibly.</p>
 
-## Our Story
-We bought the Allures 45.9 to live what we build: long-haul voyages where wind data is king, but bandwidth is scarce. From Garcia-inspired hulls to Allures' bluewater prowess, we target owners who demand reliability in remote spots. Our AI tools? Born from real squalls—open-sourced on GitHub so the community can hack and contribute.
+## Charting the Future of Sailing
+We're paving the way for AI-powered support that works where you need it most: on the high seas or in remote corners of the globe. Imagine navigation that anticipates the wind's next move or alerts that keep you one step ahead of the weather—all designed to let you focus on the horizon, not the horizon's surprises.
 
-## The Team
-- **Captain [Your Name]**: Ex-racer turned AI tinkerer. Handles the helm and hardware prototypes.
-- **Code Wrangler [Co-Founder]**: Wind algo wizard—optimizing predictions for aluminum beasts like yours.
+## Built for the Bluewater Life
+Every solution we create is born from real expeditions—tested in the rhythm of waves and winds aboard rugged expedition sailboats. These aren't lab experiments; they're practical, reliable tools honed for the open ocean, ready to join any sailor chasing distant shores.
 
-## Why Expedition Sailing?
-Because the ocean doesn't care about your resume. Our gear (sensors, apps, integrations) is battle-tested for Garcia Exploration and Allures owners: low-power, offline-first, Starlink-synced.
+## Sparking Wonder in the Next Generation
+Beyond the tech, we're driven by a bigger tide: inspiring young explorers to chase the magic of untouched nature. Through stories from the helm, shared voyages, and hands-on discovery, we want to light that spark—the one that turns a kid's gaze from screen to sea, fostering a lifelong love for the wild and remote.
+
+## Join the Voyage
+Whether you're a seasoned captain or an aspiring dreamer, we're here to sail alongside. Let's make the ocean's call a little clearer, a little safer, and a whole lot more exciting.
 
 [Back to Home](/)
 
-*Questions? [Hit us up](contact.md). Fair winds!*
+*Questions? [Get in touch](/contact/). Fair winds ahead!*
+
+*PS: Most of the words on this site are crafted with the latest AI tools—because we're always testing tomorrow's tech today.*

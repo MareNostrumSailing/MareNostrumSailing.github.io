@@ -2,6 +2,8 @@
   url: /
 - name: Blog
   url: /blog/
+- name: Picturae
+  url: /gallery/
 - name: Code
   url: /code/
 - name: Shop

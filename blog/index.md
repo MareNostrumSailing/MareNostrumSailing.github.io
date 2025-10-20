@@ -6,7 +6,7 @@ permalink: /blog/
 
 <div class="blog-index">
   <h1>Blog: From the Helm</h1>
-  <p class="blog-subtitle">Real-time dispatches from our Allures 45.9—Starlink hacks, AI wind trials, and expedition wisdom.</p>
+  <p class="blog-subtitle">Real-time dispatches from our Allures 45.9 hacks, AI experiments, and expedition with kids wisdom.</p>
 
   {% if site.posts.size > 0 %}
     {% for post in site.posts limit: 5 %}

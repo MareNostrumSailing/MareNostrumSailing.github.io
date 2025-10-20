@@ -1,27 +1,29 @@
 ---
-layout: default  # Uses Minima's default home layout (title + posts; override if needed)
-title: Welcome to Mare Nostrum Sailing
+layout: default
+title: Welcome to Mare Nostrum S[ai]ling
 permalink: /
 ---
 
-# AI-Powered Sailing for Remote Expeditions
+<div class="hero">
+  <img src="/assets/images/allures-hero.jpg" alt="Expedition sailboat cutting through waves at dawn" class="hero-img">
+  <div class="hero-text">
+    <h1>Sail Smarter, Explore Farther</h1>
+    <p>AI tools that bring the power of prediction to remote waters—safer routes, smarter decisions, endless adventure.</p>
+  </div>
+</div>
 
-We're revolutionizing expedition sailing with AI-driven tools for wind prediction, navigation, and automation—built for rugged boats like the Allures 45.9 and Garcia Exploration series.
+## Why S[ai]l with Us?
+Picture this: You're weeks from land, winds shifting fast. Our AI steps in—forecasting swells before they build, suggesting tweaks to your course, all while you soak in the solitude of untouched seas. Expedition-tested on real voyages, these tools are built for sailors who chase the horizon, not the charts.
 
-![Allures 45.9 at sea](/assets/images/allures-hero.jpg)  
+- **Remote-Ready AI**: Seamless support for high-seas navigation, even when signals fade—keeping you connected to data, not distractions.
+- **Proven on the Water**: Every feature born from bluewater trials, rugged and reliable for any expedition sailboat chasing wild coasts.
+- **Sparking the Next Wave**: We're not just innovating for today—we're inspiring tomorrow's explorers to discover nature's hidden gems, one voyage at a time.
 
-## Why Us?
-- **Open-Source Core**: Share and collaborate on our wind algorithms via GitHub.
-- **Tested on the Water**: Prototyped aboard our Allures 45.9 with Starlink for real-world remote ops.
-- **Hardware + Software**: Coming soon—AI sensors and apps for safer, smarter voyages.
+## Ready to Set Sail?
+1. [Explore Our Code](/code/) – Dive into open-source wind tools.
+2. [Read Voyage Logs](/blog/) – Real stories from the helm.
+3. [Join the Crew](/contact/) – Beta access and ideas welcome.
 
-## Quick Start
-1. [Explore Our Code](https://github.com/MareNostrumSailing) – Fork our wind repo today.
-2. [Join the Voyage](contact.md) – Sign up for beta access.
-3. [Shop AI Gear](shop.md) – Pre-order kits (placeholder for your store embed).
+Follow [@mns_grn on X](https://x.com/mns_grn) for live updates.
 
-Follow our [X feed](https://x.com/mns_grn) for live updates from the helm.
-
----
-
-*Fair winds and following seas. Let's sail smarter together.*
+*Fair winds and following seas—let's chart the future together.*
